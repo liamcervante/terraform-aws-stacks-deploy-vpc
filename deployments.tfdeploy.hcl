@@ -4,8 +4,8 @@ identity_token "aws" {
 
 deployment "development" {
   inputs = {
-    regions              = ["eu-west-1"]
-    role_arn             = "arn:aws:iam::482485466615:role/tfc-wif-simonelliott"
+    regions              = ["eu-central-1"]
+    role_arn             = "arn:aws:iam::931787512616:role/terraform-stacks"
     identity_token       = identity_token.aws.jwt
     vpc_name             = "development"
     env_name             = "stacks"
